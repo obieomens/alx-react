@@ -15,6 +15,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$|\.jsx$/, // Support both .js and .jsx files
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
@@ -34,6 +41,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   devtool: 'inline-source-map',
 };
