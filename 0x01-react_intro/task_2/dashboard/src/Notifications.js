@@ -1,5 +1,3 @@
-// src/Notifications.js
-
 import React from 'react';
 import './Notifications.css';
 import closeIcon from './close-icon.png';
