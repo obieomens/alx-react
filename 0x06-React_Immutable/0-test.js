@@ -8,5 +8,4 @@ const obj = {
 };
 
 const immutableObj = getImmutableObject(obj);
-console.log(immutableObj.toJS());
-
+console.log(immutableObj);
