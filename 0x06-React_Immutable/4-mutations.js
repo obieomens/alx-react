@@ -1,3 +1,4 @@
+
 import { Map } from 'immutable';
 
 export const map = Map({
@@ -12,4 +13,3 @@ export const map = Map({
 export const map2 = map
     .set(2, 'Benjamin')
     .set(4, 'Oliver');
-
